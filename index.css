@@ -1,0 +1,102 @@
+*{
+  box-sizing:border-box;
+  margin:0px;
+  padding:0px;
+}
+body{
+  box-sizing:border-box;
+  margin:0px;
+  padding:0px;
+}
+.MainContainer{
+  width:100vw;
+  height:max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content:; center;
+  align-items: center;
+}
+.title{
+  width:100vw;
+  height:8vh;
+  background-color: goldenrod;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+h2{
+  width:100%;
+  text-align:center;
+  color:white;
+  
+}
+.InputBox{
+  width:100vw;
+  height:10vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  
+}
+input{
+  width:70%;
+  height:6vh;
+  outline:none;
+}
+.TaskBox{
+  width:99%;
+  height:max-content;
+  padding:5px;
+  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  gap:5px;
+  
+}
+.Task{
+  width:99%;
+  border-radius:10px;
+  padding:10px;
+  background-color: whitesmoke;
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  
+}
+.OperationBox{
+  width:100%;
+  height:max-content;
+  display:flex;
+  justify-content: flex-end;
+  gap:10px;
+  
+}
+.date{
+  width:100%;
+  
+ display:flex;
+  justify-content: flex-end; 
+}
+.size{
+  font-size:25px;
+}
+.colorD{
+  color:crimson;
+}
+
+.colorU{
+  color:green;
+}
+.addButton{
+  color:green;
+  font-size: 40px;
+  border-radius:none;
+}
+.PencilButton{
+  font-size: 30px;
+  color:green;
+}
