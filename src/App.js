@@ -1,11 +1,14 @@
+import Input from './components/Input';
 
+import { useState } from "react";
 import './App.css';
-import ToDoList from './components/todolist/ToDoList';
 
 function App() {
+  
   return (
     <div className="App">
-      <ToDoList />
+      <Input/>
+     
     </div>
   );
 }
