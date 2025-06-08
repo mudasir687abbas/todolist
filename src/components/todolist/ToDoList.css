@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+.ToDoListContainer{
+    width:90%;
+    min-height:90vh;
+    max-height: max-content;
+    border:15px solid #00abf0;
+    background-color: black;
+    padding:30px 0px;
+    margin:30px auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+}
+.ToDoListContainer .titleContainer{
+    width:100%;
+    height:max-content;
+    padding:0px 0px 10px 0px;
+    border-bottom:5px solid #00abf0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ToDoListContainer .titleContainer h1,.subtitle{
+    width:90%;
+    color:#00abf0;
+    text-align: center;
+}
+
+.ToDoListContainer .titleContainer .subtitle{
+    font-weight:bolder;
+    
+}
+
+.ToDoListContainer .InputAddBtn{
+    width:90%;
+    height: max-content;
+    padding:5px;
+    margin:10px 0px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    
+}
+.ToDoListContainer input::placeholder{
+    font-size: 1rem;
+    font-weight: bold;
+    color:#00abf0;
+}
+.ToDoListContainer .InputAddBtn input{
+    width:95%;
+    height: 40px;
+    outline:none;
+    border:3px solid #00abf0;
+    background-color:transparent;
+    font-size: 1rem;
+    text-indent: 15px;
+    color:white;
+}
+.ToDoListContainer .InputAddBtn span{
+    width:max-content;
+    height: max-content;
+    padding:10px 15px;
+    cursor: pointer;
+    background-color: #00abf0;
+    font-weight: bolder;
+    font-size: 1rem;
+    color:white;
+}
+.ToDoListContainer .TaskContainer{
+    width:90%;
+    min-height: 60vh;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15px;
+}
+.ToDoListContainer .TaskContainer h1{
+    width:100%;
+    height:100%;
+    color:red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+
+}
+.ToDoListContainer .TaskContainer h1 span{
+    transform:scale(5);
+}
