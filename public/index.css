@@ -8,4 +8,15 @@ body{
     width:100vw;
     height: 100vh;
     background-color: whitesmoke;
+    overflow: hidden scroll;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.dflex{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
 }

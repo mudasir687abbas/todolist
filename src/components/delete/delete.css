@@ -1,0 +1,61 @@
+.deleteDiv{
+    width:100vw;
+    height:80vh;
+    margin-top:20px;
+    position:absolute;
+    transition: transform 2s linear;
+}
+.deleteContent{
+    width:500px;
+    background-color:rgba(0, 128, 128,0.8);
+    box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
+    padding:30px 20px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    align-items: center;
+    gap:10px;
+}
+.deleteContent h1{
+    font-weight: normal;
+    text-align: center;
+    color:white;
+}
+.deleteContent .deleteIcon{
+    background-color:transparent;
+    padding:10px;
+    border:none;
+}
+
+.deleteContent .deleteBtnDiv{
+    width:90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+}
+.deleteDiv .deleteBtnDiv button{
+    flex-basis: 50%;
+    height:45px;
+    flex-grow:0.5;
+    border:none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
+    color:black;
+    transition: all 1s linear;
+}
+.deleteBtnDiv button:hover{
+    cursor:pointer;
+}
+.deleteBtnDiv button:active{
+    transform:scale(1.2);
+    color:white;
+    background-color: red;
+}
+@media (width<=500px){
+    .deleteContent{
+        width:90%;
+    }
+}

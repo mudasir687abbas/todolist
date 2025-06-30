@@ -1,0 +1,44 @@
+
+.inputContent{
+    width:100%;
+    height:max-content;
+    margin-top: 5px;
+    padding:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0;
+    
+}
+.inputDiv input{
+    width: 80%;
+    height: 50px;
+    border:2px solid rgba(0,0,0,0.2);
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    font-size: 1rem;
+    text-indent: 10px;
+    background:transparent;
+    
+}
+.inputDiv button{
+    width:max-content;
+    height: 50px;
+    padding:0px 20px;
+    font-weight: bolder;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border:2px solid rgba(0,0,0,0.2);
+    border-left:none;
+    background:teal;
+    transition:all 2s linear ;
+    
+}
+.inputDiv button:hover{
+    cursor:pointer;
+}
+.inputDiv button:active{
+    transform:scale(1.75);
+}

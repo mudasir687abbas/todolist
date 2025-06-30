@@ -1,0 +1,73 @@
+.updateDiv{
+    position: absolute;
+    width:100vw;
+    height:80vh;
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.updateContent{
+    width:500px;
+    background-color:rgba(0, 128, 128,0.8);;
+    box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
+    
+    padding:80px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+
+}
+.updateDiv h1{
+    width:100%;
+    color:white;
+    text-align: center;
+    font-weight: normal;
+}
+.updateDiv input{
+    width: 80%;
+    height: 40px;
+    border:2px solid whitesmoke;
+    color:white;
+    outline: none;
+    font-size: 1rem;
+    text-indent: 10px;
+    background:transparent;
+    
+}
+.updateDiv input::placeholder{
+    color:rgba(245, 245, 245,0.5);
+}
+.updateDiv .updateBtnDiv{
+    width:80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+}
+.updateDiv .updateBtnDiv button{
+    flex-basis: 50%;
+    height:45px;
+    flex-grow:0.5;
+    border:none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
+    color:black;
+    transition: transform 5s linear;
+}
+.updateBtnDiv button:hover{
+    cursor:pointer;
+}
+.updateBtnDiv button:active{
+    transform:scale(1.2);
+    color:green;
+}
+@media (width <= 500px){
+    .updateCotent{
+        width:90%;
+    }
+}
