@@ -14,8 +14,8 @@ const Task = ({data})=>{
         <div className="taskActionDiv">
             <p className="taskData">{item.date}</p>
             <div className="taskBtnDiv">
-                <button className="taskEditBtn" title="Edit" onClick={()=>{setAnimateUpdate(true);setKey(index)}}><BiEditAlt color='whitesmoke' size='15'/></button>
-                <button className="taskDeleteBtn" title="Delete" onClick={()=>{setAnimateDelete(true);setKey(index)}}><FaTrash color='whitesmoke' size='15'/></button>
+                <button className="taskEditBtn" title="Edit" onClick={()=>{setAnimateUpdate(true);setKey(index)}}><BiEditAlt color='lightgreen' size='15'/></button>
+                <button className="taskDeleteBtn" title="Delete" onClick={()=>{setAnimateDelete(true);setKey(index)}}><FaTrash color='tomato' size='15'/></button>
             </div>
         </div>
         <p className="taskPara">

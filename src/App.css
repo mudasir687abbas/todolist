@@ -10,8 +10,9 @@
   position: relative;
 }
 .taskList{
+  overflow: hidden scroll;
   width:100%;
-  height:clac(100vh - 163px);
+  height:calc(100vh - 163px);
   padding:5px 10px;
   display: flex;
   flex-wrap:wrap;

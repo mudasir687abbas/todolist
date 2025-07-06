@@ -1,5 +1,5 @@
-import { FaPlusCircle } from "react-icons/fa";
 import React,{useEffect, useRef, useState} from 'react';
+import { FiUploadCloud } from "react-icons/fi";
 import "./input.css";
 
 const Input = React.memo(({data})=>{
@@ -25,7 +25,7 @@ const Input = React.memo(({data})=>{
              input.current.value = "";
              setList(newList);
             
-        }}><FaPlusCircle size='35' color="whitesmoke"/></button>
+        }} title="Upload"><FiUploadCloud size='35' color="whitesmoke"/></button>
      </div>
      </div>
     </>);

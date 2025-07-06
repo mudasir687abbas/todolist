@@ -41,10 +41,21 @@
     flex-grow:0.5;
     border:none;
     border-radius: 5px;
-    background-color: whitesmoke;
+    background-color:whitesmoke;
     box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
     color:black;
+    transform: scale(1);
     transition: all 1s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.deleteBtnDiv .deleteCancelBtn{
+    background-color: whitesmoke;
+}
+.deleteBtnDiv .deleteDeleteBtn{
+    background-color: red;
 }
 .deleteBtnDiv button:hover{
     cursor:pointer;
@@ -52,7 +63,6 @@
 .deleteBtnDiv button:active{
     transform:scale(1.2);
     color:white;
-    background-color: red;
 }
 @media (width<=500px){
     .deleteContent{

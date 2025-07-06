@@ -1,4 +1,4 @@
-import { useState,useEffect, useCallback} from 'react';
+import { useState,useEffect, useMemo} from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import Input from './components/input/Input';
@@ -7,17 +7,15 @@ import Update from './components/update/Update';
 import Delete from './components/delete/Delete';
 import Alert from './components/alert/Alert';
 function App() {
-  const [list,setList]= useState(()=>{
-    let localData = JSON.parse(localStorage.getItem('list')) || [];
-    return localData;
-  });
+  const [list,setList]= useState([]);
   const [animateUpdate,setAnimateUpdate] = useState(false);
   const [animateDelete,setAnimateDelete] = useState(false);
   const [key,setKey] = useState(-1);
   const [animateAlert,setAnimateAlert]= useState(false);
   useEffect(()=>{
-    console.log("I am App");
-  },[list]);
+    let localData = localStorage.getItem('list') || "[]";
+       setList(JSON.parse(localData));
+  },[]);
   
   return (<>
         <Header/>
