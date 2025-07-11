@@ -14,7 +14,7 @@ function App() {
   const [animateUpdate,setAnimateUpdate] = useState(false);
   const [animateDelete,setAnimateDelete] = useState(false);
   const [key,setKey] = useState(-1);
-  const [animateAlert,setAnimateAlert]= useState(false);
+  const [animateAlert,setAnimateAlert]= useState({show:false,msg:"Fill Input Box"});
   useEffect(()=>{
     let localData = localStorage.getItem('list') || "[]";
        setList(JSON.parse(localData));
@@ -25,7 +25,7 @@ function App() {
   },[list]);
   return (<>
         <Header/>
-        <Input data = {{list,setList,getDate,setAnimateAlert}} />
+        <Input data = {{list,setList,getDate,animateUpdate,animateDelete,setAnimateAlert}} />
         <div className="floatingDiv">
           <div className='taskList'>
            {memoList.length === 0 ? <div className="noDataDiv"><CgUnavailable color='tomato' size='50'/><h3>No Data</h3></div> : memoList}  
