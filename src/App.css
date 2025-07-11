@@ -23,6 +23,21 @@
   position:absolute;
 
 }
+.noDataDiv{
+  width:90%;
+  height:max-content;
+  background-color: teal;
+  box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
+  color:white;
+  margin:50px auto;
+  padding:20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap:5px;
+
+}
 .taskList::-webkit-scrollbar{
   display: none;
 }

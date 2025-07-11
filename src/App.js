@@ -6,6 +6,9 @@ import Task from './components/task/Task';
 import Update from './components/update/Update';
 import Delete from './components/delete/Delete';
 import Alert from './components/alert/Alert';
+import { MdSignalCellularNodata } from 'react-icons/md';
+import { BsEmojiAngry } from 'react-icons/bs';
+import { CgUnavailable } from 'react-icons/cg';
 function App() {
   const [list,setList]= useState([]);
   const [animateUpdate,setAnimateUpdate] = useState(false);
@@ -25,7 +28,7 @@ function App() {
         <Input data = {{list,setList,getDate,setAnimateAlert}} />
         <div className="floatingDiv">
           <div className='taskList'>
-           {list.length === 0 ? <h1>No Data</h1> : memoList}  
+           {memoList.length === 0 ? <div className="noDataDiv"><CgUnavailable color='tomato' size='50'/><h3>No Data</h3></div> : memoList}  
           </div>
         <Update data={{list,setList,animateUpdate,setAnimateUpdate,key,getDate}}/>
         <Delete data={{list,setList,animateDelete,setAnimateDelete,key}}/>
