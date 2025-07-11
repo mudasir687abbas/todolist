@@ -10,9 +10,8 @@
 }
 .updateContent{
     width:500px;
-    background-color:rgba(0, 128, 128,0.8);;
+    background-color:whitesmoke;
     box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
-    
     padding:80px 10px;
     display: flex;
     flex-direction: column;
@@ -23,15 +22,16 @@
 }
 .updateDiv h1{
     width:100%;
-    color:white;
+    color:black;
+
     text-align: center;
-    font-weight: normal;
+    font-weight: bold;
 }
 .updateDiv input{
     width: 80%;
     height: 40px;
-    border:2px solid whitesmoke;
-    color:white;
+    border:2px solid rgba(0,0,0,0.2);
+    color:black;
     outline: none;
     font-size: 1rem;
     text-indent: 10px;
@@ -54,9 +54,9 @@
     flex-grow:0.5;
     border:none;
     border-radius: 5px;
-    background-color:whitesmoke;
+    background-color:teal;
     box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
-    color:black;
+    color:white;
     transition: transform 5s linear;
     display: flex;
     justify-content: center;

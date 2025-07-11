@@ -12,9 +12,9 @@ const Delete = ({data})=>{
         <div className="deleteBtnDiv">
             <button className="deleteCancelBtn" onClick={()=>{setAnimateDelete(false);}}><MdCancel size="25" color="tomato"/>Cancel</button>
             <button className="deleteDeleteBtn" onClick={()=>{
-                    list.splice(key,1);
-                    localStorage.setItem('list',JSON.stringify(list));
-                    setList(list);
+                    const newList = list.filter((value,index)=> list[index] != list[key]);
+                    localStorage.setItem('list',JSON.stringify(newList));
+                    setList(newList);
                     setAnimateDelete(false);
                     
             }}><FaTrash size="25" color="crimson"/>Delete</button>

@@ -4,7 +4,7 @@ const Alert = ({animateAlert})=>{
     return(<>
     <div className="alertDiv" style={{transform : animateAlert ? 'translate(0%)':'translate(-100%)'}}>
      <div className="alertContent">
-        <button><PiWarningCircleBold size="50" color="whitesmoke"/></button>
+        <button><PiWarningCircleBold size="50" color="orange"/></button>
         <p>Please,Fill input box!!!</p>
      </div>
      </div>

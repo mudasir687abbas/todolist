@@ -6,7 +6,7 @@ import { FcCancel } from "react-icons/fc";
 import { FaUserEdit } from "react-icons/fa";
 
 const Update= ({data})=>{    
-   const {list,setList,animateUpdate,setAnimateUpdate,key} = data;
+   const {list,setList,animateUpdate,setAnimateUpdate,key,getDate} = data;
    const uinput = useRef();
    useEffect(()=>{
      uinput.current.value = list.length === 0 ? null : list[key].task;
@@ -23,9 +23,11 @@ const Update= ({data})=>{
         <div className="updateBtnDiv">
             <button className="updateCancelBtn" onClick={()=>{setAnimateUpdate(false)}}><MdCancel size="25" color="tomato"/>Cancel</button>
             <button className="updateUpdateBtn"onClick={()=>{
-                 list[key].task = uinput.current.value;
-                 localStorage.setItem('list',JSON.stringify(list));
-                 setList(list);
+                 const newList = list.filter((_,index)=>list[index] != list[key]);
+                 const newObj = {task:uinput.current.value,date:`${getDate()} updated`};
+                 newList.splice(key,0,newObj);
+                localStorage.setItem('list',JSON.stringify(newList));
+                 setList(newList);
                  setAnimateUpdate(false);
             }}><FaUserEdit size="25" color="lightgreen"/>Update</button>
         </div>

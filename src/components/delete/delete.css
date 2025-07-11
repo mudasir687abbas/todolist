@@ -7,8 +7,9 @@
 }
 .deleteContent{
     width:500px;
-    background-color:rgba(0, 128, 128,0.8);
+    background-color:whitesmoke;
     box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
+    border-radius: 5px;
     padding:30px 20px;
     margin:auto;
     display: flex;
@@ -18,9 +19,9 @@
     gap:10px;
 }
 .deleteContent h1{
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
-    color:white;
+    color:tomato;
 }
 .deleteContent .deleteIcon{
     background-color:transparent;
@@ -41,9 +42,9 @@
     flex-grow:0.5;
     border:none;
     border-radius: 5px;
-    background-color:whitesmoke;
+    background-color:teal;
     box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
-    color:black;
+    color:white;
     transform: scale(1);
     transition: all 1s linear;
     display: flex;
