@@ -25,7 +25,9 @@ const Input = React.memo(({data})=>{
                  setTimeout(()=>{setAnimateAlert(()=>{return {show:false,msg:"task exists"}})},[3000]);
                  return;
             }
-             let dataObject = {task:input.current.value,date:getDate()};
+             let dataObject =  { createdTask:{task:input.current.value,date:getDate()},
+                                 updatedTask:{isUpdated:false,updatedTask:null,updatedDate:null},
+                                 finishedTask:{isFinished:false,finishedColor:"lightgreen",defaultColor:'teal'}};
              let newList = [dataObject,...list];
              localStorage.setItem('list',JSON.stringify(newList));
              input.current.value = "";

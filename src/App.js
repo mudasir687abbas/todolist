@@ -21,7 +21,7 @@ function App() {
   },[]);
   const memoList = useMemo(()=>{
      return list.length === 0 ? [] : list.map((item,index)=>(<Task data={
-                                             {item,index,animateUpdate,setAnimateUpdate,setKey,animateDelete,setAnimateDelete}} />));
+                                             {list,setList,item,index,animateUpdate,setAnimateUpdate,setKey,animateDelete,setAnimateDelete}} />));
   },[list]);
   return (<>
         <Header/>

@@ -9,7 +9,7 @@ const Update= ({data})=>{
    const {list,setList,animateUpdate,setAnimateUpdate,key,getDate} = data;
    const uinput = useRef();
    useEffect(()=>{
-     uinput.current.value = list.length === 0 ? null : list[key].task;
+     uinput.current.value = list.length === 0 ? null : list[key].createdTask.task;
     
    },[key]);
   return(<>
@@ -23,12 +23,15 @@ const Update= ({data})=>{
         <div className="updateBtnDiv">
             <button className="updateCancelBtn" onClick={()=>{setAnimateUpdate(false)}}><MdCancel size="25" color="tomato"/>Cancel</button>
             <button className="updateUpdateBtn"onClick={()=>{
-                 const newList = list.filter((_,index)=>list[index] != list[key]);
-                 const newObj = {task:uinput.current.value,date:`${getDate()} updated`};
-                 newList.splice(key,0,newObj);
+                const newList = [...list];
+                const obj = newList[key];
+                const newObj = {...newList[key],updatedTask:{isUpdated:true,updatedTask:uinput.current.value,updatedDate:getDate()}}; 
+                //console.log(newObj);
+                newList.splice(key,1,newObj);
+                console.log(newList);
                 localStorage.setItem('list',JSON.stringify(newList));
-                 setList(newList);
-                 setAnimateUpdate(false);
+                setList(newList);
+                setAnimateUpdate(false);
             }}><FaUserEdit size="25" color="lightgreen"/>Update</button>
         </div>
         </div>
