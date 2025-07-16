@@ -17,6 +17,7 @@ const Task = ({data})=>{
             <div className="taskBtnDiv">
                 <button className="taskEditBtn"
                         title="Check to complete task" 
+
                         onClick={()=>{
                          const newList = [...list];
                         const obj = newList[index];
@@ -28,7 +29,7 @@ const Task = ({data})=>{
                         localStorage.setItem('list',JSON.stringify(newList));
                         setList(newList);
                 }}
-                  ><FaCheckCircle  size='17'/></button>
+                  ><FaCheckCircle color={isFinished ? 'green' : "lightgreen"}  size='17'/></button>
                 <button className="taskEditBtn" title="Edit" onClick={()=>{setAnimateUpdate(true);setKey(index)}}
                         style={{display: isFinished ? "none" :'block'}}
                         ><BiEditAlt color='lightgreen' size='15'/></button>

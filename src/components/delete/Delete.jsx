@@ -8,7 +8,7 @@ const Delete = ({data})=>{
      <div className="deleteDiv" style={{transform : animateDelete ? 'translate(0%)' : 'translate(-100%)',transition:'transform 1.5s linear'}}>
         <div className="deleteContent">
         <h1>Confirm to delete task</h1>
-        <button className='deleteIcon'><FaTrash size="200" color="crimson"/></button>
+        <button className='deleteIcon'><FaTrash size="100" color="crimson"/></button>
         <div className="deleteBtnDiv">
             <button className="deleteCancelBtn" onClick={()=>{setAnimateDelete(false);}}><MdCancel size="25" color="tomato"/>Cancel</button>
             <button className="deleteDeleteBtn" onClick={()=>{

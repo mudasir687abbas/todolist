@@ -6,8 +6,6 @@
     box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
     border-radius: 10px;
     color:white;
-    flex-basis:30%;
-    flex-grow:1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,16 +43,24 @@
 }
 
 
-@media (0px <= width <= 360px){
+@media (0px <= width <= 499px){
   .taskDiv{ 
-    flex-basis: 90%;
+    width:95%;
+    margin:auto;
     
   }
 }
-@media (361px <= width <= 768px){
+@media (500px <= width <= 900px){
   .taskDiv{
-    flex-basis:45%;
+    width:48%;
+    margin:auto;
   }
 }
-
+@media (width > 900px){
+   .taskDiv{
+     width:31.5%;
+     height:100px;
+     margin:auto;
+   }
+}
 

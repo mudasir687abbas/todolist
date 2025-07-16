@@ -12,6 +12,7 @@
     width:500px;
     background-color:whitesmoke;
     box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
+    border-radius:20px;
     padding:80px 10px;
     display: flex;
     flex-direction: column;
@@ -71,8 +72,43 @@
     transform:scale(1.2);
     color:green;
 }
-@media (width <= 500px){
-    .updateCotent{
-        width:90%;
+@media (0px <= width <= 499px){
+    .updateContent{
+        width:80%;
+    }
+    .updateDiv .updateBtnDiv{
+        flex-direction: column;
+        gap:5px;
+    }
+    .updateDiv .updateBtnDiv button{
+        width:100%;
+        padding:10px 5px;
+    }
+    .updateDiv .updateBtnDiv .updateUpdateBtn{
+        order:1;
+    }
+    .updateDiv .updateBtnDiv .updateCancelBtn{
+        order:2;
+    }
+
+}
+@media (500px <= width <= 900px){
+    .updateContent{
+        width:400px;
+    }
+     .updateDiv .updateBtnDiv{
+        flex-direction: column;
+        gap:5px;
+    }
+    .updateDiv .updateBtnDiv button{
+        width:100%;
+        padding:10px 5px;
+    }
+    .updateDiv .updateBtnDiv .updateUpdateBtn{
+        order:1;
+    }
+    .updateDiv .updateBtnDiv .updateCancelBtn{
+        order:2;
     }
 }
+

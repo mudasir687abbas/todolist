@@ -20,9 +20,8 @@
 }
 .deleteContent h1{
     font-weight:16px;
-    font-weight: bold;
     text-align: center;
-    color:tomato;
+    color:red;
 }
 .deleteContent .deleteIcon{
     background-color:transparent;
@@ -66,8 +65,44 @@
     transform:scale(1.2);
     color:white;
 }
-@media (width<=500px){
+@media (0px <= width<=499px){
     .deleteContent{
-        width:90%;
+        width:80%;
+        
     }
+    .deleteContent .deleteBtnDiv{ 
+        flex-direction: column;
+        gap:5px;
+    }  
+    .deleteBtnDiv button{
+        width:100%;
+        padding:10px 5px;
+    }
+     .deleteContent .deleteBtnDiv .deleteDeleteBtn{ 
+        order:1;
+    }   
+    .deleteContent .deleteBtnDiv .deleteCancelBtn{ 
+        order:2;
+    }  
+}
+@media (500px <= width<=900px){
+    .deleteContent{
+        width:400px;
+        padding:20px 5px;
+        
+    }
+    .deleteContent .deleteBtnDiv{ 
+        flex-direction: column;
+        gap:5px;
+    }  
+    .deleteBtnDiv button{
+        width:100%;
+        padding:10px 5px;
+    }
+     .deleteContent .deleteBtnDiv .deleteDeleteBtn{ 
+        order:1;
+    }   
+    .deleteContent .deleteBtnDiv .deleteCancelBtn{ 
+        order:2;
+    }  
 }
